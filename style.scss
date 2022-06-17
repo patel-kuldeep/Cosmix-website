@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+}
+.chk{
+    display: none;
+}
+.myicon{
+    display: none;
+}
+#banner-top{
+    background: url(./moukup-images/platter-g7eb2f9645_640.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+.navbar{
+    width: 100%;
+    background-color:rgba(15,14,14,0.8);
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+    
+        nav{
+            display: flex;
+            justify-content: space-around;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                li{
+                    padding: 20px;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        
+        }
+
+}
+.logo-width{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    top:0px;
+    img{
+        width: 100%;
+    }
+}
+#uldata{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bg-content{
+    width:100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: #fff;
+        padding: 10px;
+        font-size: 45px;
+        font-family: 'Dancing Script', cursive;
+    }
+    p{
+        color: #fff;
+        font-size: 50px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: rgba(15,14,14,0.8);
+        font-family: 'Dancing Script', cursive;
+    }
+}
+// --------------------------------------------------section of media----------------------------------------------------------------------
+@media (max-width:480px){
+    .chk{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        opacity: 0;
+        z-index: 1000000;
+    }
+    .myicon{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1000000;
+    }
+    #banner-top .navbar{
+        top: 0;
+    }
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+    .container{
+        width: 100%;
+    }
+    #uldata{
+        flex-direction: column;
+        left: -400px;
+        background-color: rgba(15,14,14,0.8);
+        transition: all 1s;
+        position: absolute;
+        top: 0px;
+    }
+    ul{
+        flex-direction: column;
+        z-index: 100000;
+        display: block;
+        li{
+            display: block;
+            text-align: center;
+        }
+    }
+    .chk:checked ~ #uldata{
+        left: 0;
+    }
+    #banner-top .navbar nav .logo{
+        display:block;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        padding: 20px;
+    }
+    .bg-content h2{
+        font-size: 40px;
+    }
+    .bg-content p{
+        font-size: 40px;
+    }
+    #banner-top .navbar nav ul li{
+        padding: 18px;
+        border-bottom: 1px solid white;
+    }
+}
+
+// ---------------------------------------------------section of food details------------------------------------------------------------------
+.food-details{
+    background: url(./moukup-images/restaurant-g8abe236b0_640.jpg)no-repeat center center/cover;
+    height: 400px;
+}
+.food-box{
+    width: 50%;
+    height: 400px;
+    padding: 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, rgba(10,9,9,0.4), rgba(5,5,5,1));
+    h1{
+        color: #fff;
+        padding: 20px;
+        font-size: 60px;
+        font-family: 'Dancing Script', cursive;
+    }
+    p{
+        color: #fff;
+        padding: 30px;
+        text-align: justify;
+    }
+}
+//----------------------------------------------------------------- section of media--------------------------------------------------------------
+@media (max-width:480px){
+
+        .food-box{
+            width: 100%;
+            height: 450px;
+            }
+            .container{
+                width: 100%;
+            }
+        .food-box h1{
+                color: #fff;
+                padding: 0px;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Dancing Script', cursive;
+        }
+        .food-box p{
+                color: #fff;
+                padding: 10px 0;
+                text-align: justify;
+        }
+}
+// ----------------------------------------------------------------section of menu---------------------------------------------------------------
+.menu{
+    background-color: rgba(15,14,14,0.8);
+    h1{
+        text-align: center;
+        padding: 30px;
+        font-family: 'Dancing Script', cursive;
+        color: rgb(214, 158, 18);
+        font-size: 50px;
+    }
+    .family-style-meals{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .first-box{
+        width: 64%;
+        height: 250px;
+        border: 5px solid #fff;
+        background: url(./moukup-images/buffet-g34cd39c16_640.jpg) no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        overflow: hidden;
+        h2{
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color: rgba(189, 184, 184,0.6);
+            .icn{
+                color: black;
+            }
+        }
+        
+    }
+    .first-box:hover{
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .second-box{
+        width: 34%;
+        height: 250px;
+        border: 5px solid #fff;
+        background: url(./moukup-images/platter-g7eb2f9645_640.jpg)no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        h2{
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color:rgba(189, 184, 184,0.6);
+            icn{
+                color: black;
+            }
+        }
+    }
+    .second-box:hover{
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .third-box{
+        width: 34%;
+        height: 250px;
+        border: 5px solid #fff;
+        background: url(./moukup-images/drink-g990a9f1df_640.jpg) no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color: rgba(189, 184, 184,0.6);
+            .icn{
+                color: black;
+            }
+        }
+        
+    }
+    .third-box:hover{
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .fourth-box{
+        width: 64%;
+        height: 250px;
+        border: 5px solid #fff;
+        background: url(./moukup-images/bar-ga3a3f49ee_640.jpg)no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color:rgba(189, 184, 184,0.6);
+            icn{
+                color: black;
+            }
+        }
+    }
+    .fourth-box:hover{
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .service{
+
+        p{
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        .detail-box1{
+            width: 32%;
+            height: 250px;
+            background: url(./moukup-images/brick-wall-g808bb5d61_640.jpg)no-repeat center center/cover;
+        }
+        .detail-box2{
+            width: 32%;
+            height: 250px;
+            background: url(./moukup-images/table-g06a313d7f_640.jpg)no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: white;
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+            }
+        }
+        .detail-box3{
+            width: 32%;
+            height: 250px;
+            background: url(./moukup-images/place-setting-g7c7d32c53_640.jpg)no-repeat center center/cover;
+        }
+        .detail-box1:hover{
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+        .detail-box2:hover{
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+        .detail-box3:hover{
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+    }
+}
+// -------------------------------------------------------section of media----------------------------------------------------------------
+@media(max-width:480px){
+    .menu{
+        padding: 40px 0;
+    }
+    .family-style-meals{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .menu .first-box{
+        width: 100%;
+        text-align: center;
+    }
+    .menu .second-box{
+        width: 100%;
+    }
+    .menu .third-box{
+        width: 100%;
+    }
+    .menu .fourth-box{
+        width: 100%;
+        margin-top: 25px;
+        text-align:center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .menu .row .detail-box1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu .row .detail-box2{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu .row .detail-box3{
+        width: 100%;
+    }
+
+}
+// -------------------------------------------------------section of the only place-----------------------------------------------------
+.only-place{
+    background: url(./moukup-images/bar-g0e5a07a3f_640.jpg)no-repeat center center/cover;
+    height: 500px;
+    position: relative;
+    .place-content{
+        width: 30%;
+        height: 250px;
+        background-color: rgba(15,14,14,0.8);
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        h1{
+            color: rgb(214, 158, 18);
+            padding: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        h3{
+            color:rgb(214, 158, 18);
+            padding: 20px;
+            font-style: italic;
+        }
+        p{
+            color:rgb(214, 158, 18); 
+            text-align: justify;
+            padding: 10px;
+            line-height:20px;
+        }
+            
+
+    }
+}
+// ------------------------------------------------------section of media--------------------------------------------------------------------
+@media(max-width:480px){
+    .only-place .place-content{
+        width: 100%;
+    }
+    .book-table .input{
+        padding: 5px;
+    }
+    .container{
+        width: 100%;
+    }
+}
+// ------------------------------------------------------section of book a table-------------------------------------------------------------
+.book-table{
+    background: url(./moukup-images/brick-wall-g808bb5d61_640.jpg)no-repeat center center/cover;
+    height: 460px;
+    .head{
+        text-align: center;
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            padding: 20px;
+            color: #fff;
+        }
+    }
+    .input{
+        text-align: center;
+    }
+    .int{
+        background-color: rgba(15,14,14,0.8);
+        padding: 10px;
+        width: 30%;
+        margin-top: 10px;
+
+    }
+    ::placeholder{
+        color: white;
+    }
+    .input a{
+        text-decoration: none;
+        color: #fff;
+        padding: 8px;
+        line-height: 50px;
+        background-color: rgba(15,14,14,0.8);
+    }
+}
+// ------------------------------------------------------section of media---------------------------------------------------------------------
+@media (max-width:480px){
+    .book-table .int{
+        width: 100%;
+    }
+}
+// -------------------------------------------------------section of review and rating--------------------------------------------------------
+.review{
+    background-color: rgba(85, 83, 83, 0.8);
+    height: 400px;
+}
+.review-head{
+    text-align: center;
+    h1{
+        color: rgb(214, 158, 18);
+        padding: 20px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+}
+.gradient h3 span{
+    font-size: 50px;
+    color: #fff;
+}
+.str{
+    color: rgb(214, 158, 18);
+    padding: 5px;
+}
+h4{
+    color: rgb(214, 158, 18);
+    padding: 10px 0;
+}
+ .review-name p{
+    padding: 10px 0;
+    color: #fff;
+}
+.color{
+    width: 60%;
+}
+h5{
+    width: 100%;
+    height: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, green, #f06d06,red);
+    background-color: red;
+}
+.review-main{
+    display: flex;
+    justify-content: space-between;
+}
+.gradient{
+    width: 50%;
+}
+.review-name{
+    width: 40%;
+}
+.review-name-color{
+    display: flex;
+    justify-content: space-between;
+}
+.paragraph{
+    width: 40%;
+    padding: 20px 0;
+    p{
+        text-align: justify;
+        color: #fff;
+    }
+}
+// -------------------------------------------------------section of media-------------------------------------------------------------------
+@media(max-width:480px){
+    h5{
+        width: 100%;
+    }
+    h4{
+        padding: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .review{
+        height: 800px;
+    }
+    .review-main{
+        flex-direction: column;
+    }
+    .gradient{
+        width: 100%;
+    }
+    .review-name{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .review-name-color{
+        flex-direction: column;
+    }
+    .paragraph{
+        width: 100%;
+    }
+    .paragraph p{
+        padding: 10px;
+    }
+    .gradient h3 span{
+        padding: 20px;
+    }
+    .color{
+        width: 100%;
+    }
+}
+
+// -------------------------------------------------------section of contact us------------------------------------------------------------------
+.contact{
+    background-color: rgba(15,14,14,0.8);
+}
+.main-contact{
+    display: flex;
+    justify-content: space-between;
+    .information{
+        width: 24%;
+        h1{
+            font-size: 44px;
+            padding: 20px;
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+            padding: 20px;
+        }
+        .inst{
+            background-color: rgb(238, 40, 122);
+            font-size: 25px;
+            margin-right: 5px;
+        }
+        .face{
+            background-color: rgb(29, 84, 185);
+            font-size: 25px;
+            margin-right: 5px;
+        }
+        .twit{
+            background-color: rgba(51, 48, 238, 0.774);
+            font-size: 25px;
+            margin-right: 5px;
+        }
+        .app{
+            background-color: rgb(35, 226, 35);
+            font-size: 25px;
+            margin-right: 5px;
+        }
+
+    }
+    .map{
+        width: 20%;
+        height: 300px;
+        h1{
+            font-size: 54px;
+            padding: 20px;
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+        }
+        img{
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    .twiit{
+        width: 24%;
+        h1{
+            font-size: 44px;
+            padding: 20px;
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+
+        }
+        p{
+            color: #fff;
+            padding: 20px;
+            line-height: 30px;
+        }
+
+    }
+    .our-service{
+        width: 24%;
+        h1{
+            font-size: 44px;
+            padding: 20px;
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+            padding: 20px;
+        }
+    }
+}
+.footer{
+    text-align: center;
+    i{
+        font-size: 34px;
+        color: red;
+    }
+}
+// -----------------------------------------------------------section of media---------------------------------------------------------
+@media(max-width:480px){
+    .main-contact{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .main-contact .information h1{
+            font-size: 34px;
+            padding: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .main-contact .information{
+        width: 100%;
+    }
+    .main-contact .twiit{
+        width: 100%;
+    }
+    .main-contact .our-service{
+        width: 100%;
+    }
+    .main-contact .information h1{
+        font-size: 53px;
+    }
+    .main-contact .map{
+        width: 100%;
+    }
+}
