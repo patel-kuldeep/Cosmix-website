@@ -1,0 +1,240 @@
+@media only screen and (max-width: 1200px) {
+.container{
+   width: 100%;
+}
+/* sectio of navbar----------------------------------------------------------------------------------------------- */
+.navbar{
+  height: 0;
+}
+.logo{
+  padding: 10px;
+}
+.navbar-content{
+    flex-direction: column;
+    position: relative;
+}
+.bar{
+  display: block;
+  position: absolute;
+  right: 15px;
+  top:15px;
+}
+.chk{
+    display:block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 0;
+}
+.navbar-content ul{
+   flex-direction: column;
+   position: absolute;
+   left: -400px; 
+   width: 100%;
+   background: rgba(11, 11, 11, 0.9);
+   top: 55px;
+  transition: all 1s;
+   z-index: 100000;
+}
+.navbar-content ul li{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.chk:checked ~ ul{
+  left: 0;
+}
+.bg-image{
+  background: url(./01.jpg) no-repeat center center/cover;
+  height: 500px;
+}
+.bg-image::before{
+  height: 500px;
+}
+.kuldeep{
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+.bg-content h3{
+  font-size: 20px;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+.bg-content h1{
+  font-size: 30px;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+.bg-content p{
+  font-size: 15px;
+  padding: 8px 0;
+  letter-spacing: 1px;
+}
+/* section of about----------------------------------------------------------------------------------------------- */
+.about-detail{
+    flex-direction: column;
+}
+.about-content p{
+  padding: 10px 0;
+  text-align: justify;
+}
+.about-detail .para{
+    width: 100%;
+    padding: 20px;
+}
+.about-detail .image{
+  width: 100%;
+}
+.download{
+  flex-direction: column;
+  padding: 30px;
+}
+.button{
+  padding: 20px 0;
+}
+.about-detail .image img{
+    width: 100%;
+}
+/* section of our service-------------------------------------------------------------------------------------- */
+.main{
+  padding: 10px;
+}
+.paragraph{
+  padding-left:0px;
+}
+/* section of our experience-------------------------------------------------------------------------------------- */
+.image-content{
+  flex-direction: column;
+}
+.content-image img{
+  width: 100%;
+}
+.detail{
+  width: 100%;
+  padding: 10px;
+}
+/* section of portfolio------------------------------------------------------------------------------------------- */
+.portfolio-head p{
+  padding: 10px;
+  font-size: 20px;
+  text-align: justify;
+}
+.list2{
+  padding:15px;
+}
+.gallery{
+  width: 100%;
+}
+.main-box{
+  width: 100%;
+}
+.image-box{
+  width: 100%;
+}
+.image-box-content{
+  width: 100%;
+  position: absolute;
+  bottom: 22px;
+}
+.process .l1 .l2{
+  width: 100%;
+}
+.process .l3{
+  width: 100%;
+}
+.process .l5{
+  width: 100%;
+}
+.process .l4{
+  width: 100%;
+}
+.process .l6{
+  width: 100%;
+}
+.process .l7{
+  width: 100%;
+}
+/* section of awesome-features------------------------------------------------------------------------------------- */
+.awsome-feature{
+  padding: 20px;
+}
+.awsome-content P{
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: justify;
+}
+.feature-image-contant{
+  flex-direction: column;
+}
+.feature-content{
+  width: 100%;
+}
+.feature-image{
+  width: 100%;
+}
+.image-box-content{
+  width: 100%;
+}
+/* section of julie-image ------------------------------------------------------------------------------------------*/
+.julie-head p{
+  padding: 10px;
+  text-align: justify;
+}
+.display{
+  flex-direction: column;
+}
+.julie{
+  padding: 20px;
+}
+.julie-main{
+  width: 100%;
+}
+/* section of number----------------------------------------------------------------------------------------------- */
+.number{
+  padding: 90px;
+}
+.main-number{
+  flex-direction: column;
+  align-items: center;
+}
+.icon-content{
+  border-right: none;
+}
+/* section of latest blog----------------------------------------------------------------------------------------- */
+.latest-blog{
+  padding: 20px;
+}
+.flex{
+  flex-direction: column;
+}
+.image-head{
+  width: 100%;
+}
+/* section of contact-us------------------------------------------------------------------------------------------ */
+.main-contact{
+  flex-direction: column;
+  padding: 10px;
+}
+.contact-icon{
+  width: 100%;
+}
+.contact-box{
+  width: 100%;
+}
+.subject input{
+  width: 100%;
+}
+.message textarea{
+  width: 100%;
+}
+.send{
+  width: 100%;
+}
+/* section of follow ------------------------------------------------------------------------------------------------*/
+.icn{
+  flex-wrap: wrap;
+  align-items: center;
+}
+}
